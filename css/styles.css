@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+}
+
+.main-title {
+    background: #333;
+    color: #fff;
+    font-size: 1.45rem;
+    margin: 0;
+    padding: 25px 0;
+    text-transform: uppercase;
+}
+
+.intro {
+    text-align: center;
+    border-bottom: 5px solid #333;
+}
+
+.intro h2 {
+    font-size: 1.40em;
+    margin: 25px 10px 10px 10px;
+}
+
+.intro p {
+    color: #888;
+    font-size: 1.15em;
+    margin: 0 10px 25px 10px;
+    line-height: 1.25em;
+}
+
+form {
+    margin-top: 5px;
+    border-top: 2px solid #333;
+}
+
+form h2 {
+    margin: 25px 0;
+    text-align: left;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label:nth-child(1n+2) {
+    margin-top: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    height: 45px;
+    background: #f1f1f1;
+    text-align: right;
+    font-style: italic;
+    border: none;
+    border-radius: 2px;
+    padding-right: 15px;
+}
+
+input:last-child {
+    width: 50%;
+}
+
+input:last-child {
+    margin-bottom: 25px;
+}
+
+label #name {
+    margin-right: 5px;
+}
+
+@media(min-width: 768px) {
+    
+    .wrapper {
+        width: 500px;
+        margin: 0 auto;
+    }
+    
+}
+
