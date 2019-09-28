@@ -47,7 +47,6 @@ h1, h2 {
 }
 
 form {
-    max-width: 380px;
     margin: 5px;
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;
@@ -121,8 +120,6 @@ input[type="radio"] {
     width: 15px;
     height: 15px;
     display: inline-block;
-    border: #fff;
-    background: rgba(255, 255, 255, 0);
     outline: none;
 }
 
@@ -165,8 +162,24 @@ footer {
 @media(min-width: 768px) {
     
     .wrapper {
-        width: 500px;
         margin: 0 auto;
+    }
+    
+    .intro h2,
+    .intro p,
+    form,
+    .newsletter {
+        max-width: 500px;
+        margin: 15px auto;
+    }
+
+    .intro {
+        border: none;
+    }
+
+    .intro p {
+        padding-bottom: 15px;
+        border-bottom: 5px solid #333;
     }
     
 }
