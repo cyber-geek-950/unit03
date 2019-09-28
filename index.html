@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Online Registration Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 
 </head>
@@ -12,7 +14,7 @@
     <div class="wrapper">
         <section class="intro">
             <h1 class="main-title">The Code Review</h1>
-            <h2>signup for our newsletter</h2>
+            <h2>Signup for our newsletter</h2>
             <p>Get the lastest news on how your code is doing right in your inbox</p>
         </section>
 
@@ -40,19 +42,49 @@
                 <option value="Northamptonshire">Northamptonshire</option>
                 <option value="Oxforshire">Oxfordshire</option>
             </select>
-                
+
             <label for="zip">Zip Code</label>
             <input type="text" id="zip" name="zip">
 
         </form>
 
         <section class="newsletter">
-            <p>Select the newsletter you would like to receive</p>
-            <p>Newsletter format</p>
-            <p>Other topics you'd like to hear about</p>
+            <h2>Newsletter</h2>
+            <p class="letter-copy">Select the newsletter you would like to receive</p>
+            
+            <ul>
+                <li>
+                    <input type="checkbox" id="html" value="interest_html" name="user_interest">
+                    <label class="light" for="html">HTML News</label>
+                </li>
+                <li><input type="checkbox" id="css" value="interest_css" name="user_interest">
+                    <label class="light" for="js">CSS News</label></li>
+                <li>
+                    <input type="checkbox" id="js" value="interest_js" name="user_interest">
+                    <label class="light" for="js">Javascript News</label>
+                </li>
+            </ul>
+            
+            <ul>
+                <h2>Newsletter format</h2>
+                <li>
+                    <input type="radio" id="html" value="format_html" name="user_format">
+                    <label class="light" for="html">HTML</label>
+                </li>
+                <li>
+                    <input type="radio" id="text" value="interest_plaintext" name="user_interest">
+                    <label class="light" for="html">Plain Text</label>
+                </li>
+            </ul>
+
+            <p class="format-copy">Other topics you'd like to hear about</p>
+            <textarea>
+
+            </textarea>
+            <button><span>Sign up</span></button>
         </section>
         <footer>
-            &copy; The Code Review
+            <span>&copy; The Code Review</span>
         </footer>
 
         
