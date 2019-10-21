@@ -72,40 +72,42 @@
     </form>
 
     <section class="newsletter">
-        <h2>Newsletter</h2>
-        <p class="letter-copy">Select the newsletter you would like to receive</p>
-        
-        <ul class="checkbox-container">
-            <li>
-                <input type="checkbox" id="html" value="interest_html" name="user_interest">
-                <label class="checkbox-label light" for="html">HTML News</label>
-            </li>
-            <li><input type="checkbox" id="css" value="interest_css" name="user_interest">
-                <label class="checkbox-label light" for="css">CSS News</label></li>
-            <li>
-                <input type="checkbox" id="js" value="interest_js" name="user_interest">
-                <label class="checkbox-label light" for="js">Javascript News</label>
-            </li>
-        </ul>
-        
-        <ul>
-            <h2>Newsletter format</h2>
-            <li>
-                <input type="radio" id="html" value="format_html" name="user_format">
-                <label class="light">HTML</label>
-            </li>
-            <li>
-                <input type="radio" id="text" value="interest_plaintext" name="user_interest">
-                <label class="light">Plain Text</label>
-            </li>
-        </ul>
+        <fieldset>
+            <h2>Newsletter</h2>
+            <p class="letter-copy">Select the newsletter you would like to receive</p>
+            
+            <ul class="checkbox-container">
+                <li>
+                    <input type="checkbox" id="html" value="interest_html" name="user_interest">
+                    <label class="checkbox-label light" for="html">HTML News</label>
+                </li>
+                <li><input type="checkbox" id="css" value="interest_css" name="user_interest">
+                    <label class="checkbox-label light" for="css">CSS News</label></li>
+                <li>
+                    <input type="checkbox" id="js" value="interest_js" name="user_interest">
+                    <label class="checkbox-label light" for="js">Javascript News</label>
+                </li>
+            </ul>
+            
+            <ul>
+                <h2>Newsletter format</h2>
+                <li>
+                    <input type="radio" id="html" value="format_html" name="user_format">
+                    <label class="light">HTML</label>
+                </li>
+                <li>
+                    <input type="radio" id="text" value="interest_plaintext" name="user_interest">
+                    <label class="light">Plain Text</label>
+                </li>
+            </ul>
 
-        <p class="format-copy">Other topics you'd like to hear about</p>
-        
-        <textarea>
+            <p class="format-copy">Other topics you'd like to hear about</p>
+            
+            <textarea>
 
-        </textarea>
-        <button><span>Sign up</span></button>
+            </textarea id="textarea" name="text">
+            <button><span>Sign up</span></button>
+            </fieldset>
     </section>
 
     <footer>
