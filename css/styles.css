@@ -11,58 +11,91 @@ html {
 
 body {
     font-size: 16px;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-family: 'Merriweather', serif;
+    background-color: #fff;
+    color: #333;
 }
 
 h1, h2 {
     color: #333;
 }
 
+.header {
+    margin: 0 auto;
+}
+
+ .wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+ }
+
 .main-title {
-    background: #333;
+    background: #2d3945;
     color: #fff;
-    font-size: 1.45rem;
+    font-size: 1.5rem;
     margin: 0;
     padding: 25px 0;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .intro {
-    margin: 0 5px 0 5px;
+    margin: 0 10px;
+    padding: 40px 10px 60px 10px;
     text-align: center;
-    border-bottom: 5px solid #333;
+    border-bottom: 5px solid #2d3945;
 }
 
 .intro h2 {
-    font-size: 1.40em;
+    margin-bottom: 15px;
+    font-size: 1.5em;
     font-weight: 600;
-    margin: 25px 10px 10px 10px;
 }
 
 .intro p {
-    color: #888;
-    font-size: 1.25em;
-    margin: 0 10px 25px 10px;
-    line-height: 1.25em;
+    color: #aaafb4;
+    font-size: 1em;
+    line-height: 1.4;
+    font-weight: 300;
 }
 
 form {
-    margin: 5px;
-    border-top: 2px solid #333;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #2d3945;
+    border-top: 2px solid #2d3945;
+    margin: 4px 10px 0 10px;
+    padding-bottom: 30px;
 }
 
-form h2 {
-    font-size: 1.40em;
-    font-weight: 600;
-    margin: 25px 0;
+.contact-info h2 {
+    font-size: 1.5em;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.contact-info {
+    display: flex;
+}
+
+.contact-info input, .contact-info select {
+    width: 100%;
+    margin-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 50px;
+    background: #eff0f1;
     text-align: left;
-    color: #333;
+    font-style: italic;
+    border: none;
+    border-radius: 4px;
+}
+
+.flex-pair {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    display: block;
-    color: #999;
+    color: #555;
     margin-bottom: 10px;
 }
 
@@ -70,45 +103,29 @@ label:nth-child(1n+2) {
     margin-top: 15px;
 }
 
-input,
-select {
-    width: 100%;
-    height: 45px;
-    background: #f1f1f1;
-    text-align: right;
-    font-style: italic;
-    border: none;
-    border-radius: 2px;
-    padding-right: 15px;
+#zip {
+    max-width: 50%;
+    margin: 0;
 }
 
-input:last-child {
-    width: 50%;
-}
-
-input:last-child {
-    margin-bottom: 25px;
-}
-
-label #name {
-    margin-right: 5px;
-}
+/* NEWSLETTER STYLES */
 
 .newsletter {
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .newsletter h2 {
-    font-size: 1.40em;
+    font-size: 1.5em;
     font-weight: 600;
-    margin: 25px 0 10px 0;
+    margin: 25px 0 25px 0;
 }
 
 .letter-copy,
 .format-copy {
     color: #999;
     font-size: 1.25em;
-    line-height: 1.6em;
+    line-height: 1.4em;
+    margin-bottom: 10px;
 }
 
 .format-copy {
@@ -123,15 +140,28 @@ input[type="radio"] {
     outline: none;
 }
 
+input:focus {
+    border: 2px solid #46698b;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+}
+
+.checkbox label {
+    display: flex;
+}
+
 .light {
-    display: inline-block; 
+    display: inline-block;
 }
 
 textarea {
     width: 100%;
     height: 100px;
     margin-top: 15px;
-    background: #f1f1f1;
+    background: #eff0f1;
     border: none;
     border-radius: 4px;
 }
@@ -160,27 +190,25 @@ footer {
 }
 
 @media(min-width: 768px) {
-    
-    .wrapper {
-        margin: 0 auto;
-    }
-    
-    .intro h2,
-    .intro p,
-    form,
-    .newsletter {
-        max-width: 500px;
-        margin: 15px auto;
+
+    .header {
+        width: 100%;
     }
 
-    .intro {
-        border: none;
+    .flex-pair {
+        flex-direction: row;
     }
 
-    .intro p {
-        padding-bottom: 15px;
-        border-bottom: 5px solid #333;
+    .contact-info input,  
+    .contact-info select {
+        flex-grow: 1;
+        flex-basis: 65%;
     }
-    
+
+    .contact-info label {
+        flex-basis: 35%;
+        height: 50px;
+        margin: auto 0;
+    }
 }
 
