@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Online Registration Form</title>
+    <title>Online Registration Form | The Code review</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <title>The Code Review</title>
 </head>
 
 <body>
@@ -17,104 +16,100 @@
     </div>  
 
     <div class="wrapper"> 
+        <section class="intro">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the lastest news on how your code is doing right in your inbox</p>
+        </section>
 
-    <section class="intro">
-        <h2>Signup for our newsletter</h2>
-        <p>Get the lastest news on how your code is doing right in your inbox</p>
-    </section>
+        <form action="index.html" method="post">
+            <fieldset class="contact-info">
 
-    <!-- <hr> -->
+                <h2>Contact Information</h2>
 
-    <form action="index.html" method="post">
-        <fieldset class="contact-info">
+                <div class="flex-pair">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="full_name" placeholder="Required">
+                </div>  
 
-            <h2>Contact Information</h2>
+                <div class="flex-pair">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="email_address" placeholder="Required">
+                </div>
 
-            <div class="flex-pair">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="full_name" placeholder="Required">
-            </div>  
+                <div class="flex-pair">
+                    <label for="number">Phone Number</label>
+                    <input type="text" id="number" name="phone_number">
+                </div>
+                
+                <div class="flex-pair">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="street_address">
+                </div>
+                
+                <div class="flex-pair">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                
+                <div class="flex-pair">
+                    <label for="state">State</label>
+                    <select id="state" name="state">
+                        <optgroup label="Area">
+                            <option value="Buckingham">Buckingham</option>
+                            <option value="Northamptonshire">Northamptonshire</option>
+                            <option value="Oxforshire">Oxfordshire</option>
+                        </optgroup>
+                    </select>
+                </div>
 
-            <div class="flex-pair">
-                <label for="email">Email Address</label>
-                <input type="text" id="email" name="email_address" placeholder="Required">
-            </div>
-
-            <div class="flex-pair">
-                <label for="number">Phone Number</label>
-                <input type="text" id="number" name="phone_number">
-            </div>
-            
-            <div class="flex-pair">
-                <label for="address">Street Address</label>
-                <input type="text" id="address" name="street_address">
-            </div>
-            
-            <div class="flex-pair">
-                <label for="city">City</label>
-                <input type="text" id="city" name="city" placholder="City">
-            </div>
-            
-            <div class="flex-pair">
-                <label id="state">State</label>
-                <select id="state" name="state">
-                    <option value="Buckingham">Buckingham</option>
-                    <option value="Northamptonshire">Northamptonshire</option>
-                    <option value="Oxforshire">Oxfordshire</option>
-                </select>
-            </div>
-
-            <div class="flex-pair">
-                <label for="zip">Zip Code</label>
-                <input type="text" id="zip" name="zip">
-            </div>    
-        </fieldset>
-    </form>
-
-    <section class="newsletter">
-        <fieldset>
-            <h2>Newsletter</h2>
-            <p class="letter-copy">Select the newsletter you would like to receive</p>
-            
-            <ul class="checkbox-container">
-                <li>
-                    <input type="checkbox" id="html" value="interest_html" name="user_interest">
-                    <label class="checkbox-label light" for="html">HTML News</label>
-                </li>
-                <li><input type="checkbox" id="css" value="interest_css" name="user_interest">
-                    <label class="checkbox-label light" for="css">CSS News</label></li>
-                <li>
-                    <input type="checkbox" id="js" value="interest_js" name="user_interest">
-                    <label class="checkbox-label light" for="js">Javascript News</label>
-                </li>
-            </ul>
-            
-            <ul>
-                <h2>Newsletter format</h2>
-                <li>
-                    <input type="radio" id="html" value="format_html" name="user_format">
-                    <label class="light">HTML</label>
-                </li>
-                <li>
-                    <input type="radio" id="text" value="interest_plaintext" name="user_interest">
-                    <label class="light">Plain Text</label>
-                </li>
-            </ul>
-
-            <p class="format-copy">Other topics you'd like to hear about</p>
-            
-            <textarea>
-
-            </textarea id="textarea" name="text">
-            <button><span>Sign up</span></button>
+                <div class="flex-pair">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="postcode">
+                </div>    
             </fieldset>
-    </section>
+        </form>
 
-    <footer>
-        <span>&copy; Copyright The Code Review</span>
-    </footer>
+        <section class="newsletter">
+            <fieldset>
+                <h2>Newsletter</h2>
+                <p class="letter-copy">Select the newsletter you would like to receive</p>
+                
+                <ul class="checkbox-container">
+                    <li>
+                        <input type="checkbox" id="html" value="interest_html" name="user_interest">
+                        <label class="checkbox-label light" for="html">HTML News</label>
+                    </li>
+                    <li><input type="checkbox" id="css" value="interest_css" name="user_interest">
+                        <label class="checkbox-label light" for="css">CSS News</label></li>
+                    <li>
+                        <input type="checkbox" id="js" value="interest_js" name="user_interest">
+                        <label class="checkbox-label light" for="js">Javascript News</label>
+                    </li>
+                </ul>
+                
+                <h2>Newsletter format</h2>
+                <ul>
+                    <li>
+                        <input type="radio" id="htmlnews" value="format_html" name="user_format">
+                        <label class="light">HTML</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="text" value="interest_plaintext" name="user_interest">
+                        <label class="light">Plain Text</label>
+                    </li>
+                </ul>
 
-    </div>
-    </div>
+                <p class="format-copy">Other topics you'd like to hear about</p>
+                
+                <textarea id="textarea" name="text"></textarea>
+                <button><span>Sign up</span></button>
+            </fieldset>
+        </section>
+
+        <footer>
+            <span>&copy; Copyright The Code Review</span>
+        </footer>
+
+    </div><!-- END WRAPPER -->
     </body>
 </html>
