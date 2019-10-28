@@ -24,7 +24,7 @@
         <form action="index.html" method="post">
             <fieldset class="contact-info">
 
-                <h2>Contact Information</h2>
+                <legend>Contact Information</legend>
 
                 <div class="flex-pair">
                     <label for="name">Full Name</label>
@@ -65,46 +65,46 @@
                 <div class="flex-pair">
                     <label for="zip">Zip Code</label>
                     <input type="text" id="zip" name="postcode">
-                </div>    
-            </fieldset>
-        </form>
+                </div> 
+            </fieldset>    
 
-        <section class="newsletter">
+            <fieldset class="newsletter">
+                <legend>Newsletter</legend>
+                    <p class="letter-copy">Select the newsletter you would like to receive</p>
+                    
+                    <ul class="checkbox-container">
+                        <li>
+                            <input type="checkbox" id="html" value="interest_html" name="user_interest">
+                            <label class="checkbox-label light" for="html">HTML News</label>
+                        </li>
+                        <li><input type="checkbox" id="css" value="interest_css" name="user_interest">
+                            <label class="checkbox-label light" for="css">CSS News</label></li>
+                        <li>
+                            <input type="checkbox" id="js" value="interest_js" name="user_interest">
+                            <label class="checkbox-label light" for="js">Javascript News</label>
+                        </li>
+                    </ul>
+            </fieldset>        
+                
             <fieldset>
-                <h2>Newsletter</h2>
-                <p class="letter-copy">Select the newsletter you would like to receive</p>
-                
-                <ul class="checkbox-container">
-                    <li>
-                        <input type="checkbox" id="html" value="interest_html" name="user_interest">
-                        <label class="checkbox-label light" for="html">HTML News</label>
-                    </li>
-                    <li><input type="checkbox" id="css" value="interest_css" name="user_interest">
-                        <label class="checkbox-label light" for="css">CSS News</label></li>
-                    <li>
-                        <input type="checkbox" id="js" value="interest_js" name="user_interest">
-                        <label class="checkbox-label light" for="js">Javascript News</label>
-                    </li>
-                </ul>
-                
-                <h2>Newsletter format</h2>
-                <ul>
-                    <li>
-                        <input type="radio" id="htmlnews" value="format_html" name="user_format">
-                        <label class="light">HTML</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="text" value="interest_plaintext" name="user_interest">
-                        <label class="light">Plain Text</label>
-                    </li>
-                </ul>
+                <legend>News Letter Format</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" id="htmlnews" value="format_html" name="user_format">
+                            <label class="light">HTML</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="text" value="format_plaintext" name="user_interest">
+                            <label class="light">Plain Text</label>
+                        </li>
+                    </ul>
 
-                <p class="format-copy">Other topics you'd like to hear about</p>
+                    <label class="format-copy">Other topics you'd like to hear about</label>
                 
                 <textarea id="textarea" name="text"></textarea>
-                <button><span>Sign up</span></button>
+                <button type="submit"><span>Sign up</span></button>
             </fieldset>
-        </section>
+        </form>
 
         <footer>
             <span>&copy; Copyright The Code Review</span>
